@@ -1,0 +1,90 @@
+/* RESET DEFAULT STYLES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-image: url(/assets/img/img-2.png); */
+}
+
+/* section{
+    padding: 100px 200px;
+} */
+
+
+
+/* MAIN SECTION */
+main{
+    padding:100px 200px;
+    display: flex;
+    background: white;
+    transition: 00.3s ease;
+}
+
+.info{
+    width: 40%;
+    line-height: 1.5;
+}
+
+.info h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: darkslategray;
+}
+.info p strong{
+    color: rgb(47, 46, 65);
+}
+
+.info p{
+    font-size: 30px;
+}
+
+.my-image{
+    width: 60%;
+}
+
+.my-image img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 980px){
+    main{
+        padding: 100px 20px;
+    }
+}
+
+
+   
+@media (max-width: 900px){
+     /* MAIN SECTION */
+     main{
+        padding:100px 20px;
+        display: flex;
+        /* background: rgb(218, 204, 224); */
+    }
+
+    .info{
+        width: 40%;
+        line-height: 1.5;
+    }
+}
+   
+
+   
+
+@media (max-width:690px){
+    main{
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+        /* background-color: red; */
+    }
+     
+    .my-image{
+        width: 100%;
+        margin-top: 50px;
+    }
+}

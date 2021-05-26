@@ -1,0 +1,75 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-color: rgb(160, 42, 154);
+    transition: 0.3s ease;
+}
+
+
+.nav-items .nav-links{
+    font-size: 17px;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(225, 225, 197);
+}
+
+.logo-wrapper .logo{
+    font-size: 25px;
+    color: rgb(225, 225, 225);
+
+}
+
+/* Hide hamburger by default on big screen */
+.hamburger-wrapper{
+    display: none;
+}
+
+.nav-items{
+    margin-top: 0px;
+}
+
+.nav-items .nav-links:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 46, 65);
+    border-radius: 2px;
+}
+
+
+
+/* MEDIA QUERY */
+@media(max-width: 980px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+}
+
+@media(max-width: 900px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+    .hamburger-wrapper{
+        display: block;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 25px;
+    }
+    
+    .nav-items{
+        display: none;
+    }
+
+    .open-nav-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .nav-links{
+        text-align: right;
+    }
+}

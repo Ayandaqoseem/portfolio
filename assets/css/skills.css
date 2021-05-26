@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* SKILLS */
+.skills{
+    width: 100%;
+    padding: 100px 200px;
+    transition: 0.3s ease;
+    background: rgb(238, 238, 246);
+}
+.html, .css, .javascript, .angular, .data-analyst{
+    display: flex;
+}
+
+
+.skills-icon-container{
+    font-size: 50px;
+    width: 20%;
+    margin-bottom: 20px;
+    color:  rgb(160, 42, 154);
+}
+
+.skills-description{
+    color: rgb(47, 46, 65);
+    font-size: 17px;
+}
+
+@media (max-width: 980px){
+    .skills{
+        padding: 100px 20px;
+    }
+}
+
+
+   
+@media (max-width: 900px){
+     /* SKILLS SECTION */
+     .skills{
+        padding:100px 20px;
+        /* display: flex; */
+        /* background: rgb(218, 204, 224); */
+    }
+
+    .info{
+        width: 40%;
+        line-height: 1.5;
+    }
+}
